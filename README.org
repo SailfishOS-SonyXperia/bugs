@@ -1,0 +1,16 @@
+#+TITLE: Sailfish OS Sony Xperia community ports - Bug Tracker
+* Build Instructions
+  Follow [[./INSTALL.org]].
+* Supported devices
+
+| Device            | Codename                                   | Android base |
+|-------------------+--------------------------------------------+--------------|
+|                   | kumano board (SM8150, Snapdragon 855+/860) |           10 |
+|-------------------+--------------------------------------------+--------------|
+| Xperia 1          | griffin                                    |              |
+| Xperia 5          | bahamut                                    |              |
+|-------------------+--------------------------------------------+--------------|
+|                   | edo board (SM8250, Snapdragon 865 5G)      |           11 |
+|-------------------+--------------------------------------------+--------------|
+| Xperia 1 II^{WIP} |                                            |              |
+| Xperia 5 II^{WIP} |                                            |              |

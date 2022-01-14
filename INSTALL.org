@@ -1,0 +1,10 @@
+#+TITLE: Sailfish OS Sony Xperia Build instructions
+#+LANGUAGE: english
+
+Building is mostly the same as for official Sony ports.
+You only have to adjust the setup of ~hadk.env~ with values
+appropriate for your device.
+
+The official instructions for building you can find here:
++ Android 10 based :: https://docs.sailfishos.org/Develop/HW_Adaptation/Sailfish_X_Xperia_Android_10_Build_and_Flash/
++ Android 11 based (WIP) :: https://github.com/sailfishos/docs.sailfishos.org/pull/21
