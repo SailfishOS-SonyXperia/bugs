@@ -1,10 +1,58 @@
-#+TITLE: Sailfish OS Sony Xperia Build instructions
+#+TITLE: Sailfish OS Sony Xperia Build and install instructions
 #+LANGUAGE: english
+* Intro
 
-Building is mostly the same as for official Sony ports.
-You only have to adjust the setup of ~hadk.env~ with values
-appropriate for your device.
+  This file tracks the install instructions for our ports
 
-The official instructions for building you can find here:
-+ Android 10 based :: https://docs.sailfishos.org/Develop/HW_Adaptation/Sailfish_X_Xperia_Android_10_Build_and_Flash/
-+ Android 11 based (WIP) :: https://github.com/sailfishos/docs.sailfishos.org/pull/21
+* Prebuilds
+
+  Download the zip file attached to the latest release and follow the /flashing-readme.txt/
+  included in the archive.
+
+  If you need additional help please read the offical flashing instructions:
+  https://jolla.com/sailfishxinstall/
+
+  In case any problems arise please [[https://github.com/SailfishOS-SonyXperia/bug_tracker/issues/new/choose][open an issue]] in the repository.
+
+* Built it your self
+
+** Vanilla builds
+
+   Building this way is mostly the same as for official Sony ports.
+   You only have to adjust the setup of ~hadk.env~ with values
+   appropriate for your device (you get them by reading [[./README.org]]).
+
+   The official instructions for building you can find here:
+   + [[https://docs.sailfishos.org/Develop/HW_Adaptation/Sailfish_X_Xperia_Android_11_Build_and_Flash/][Android 10]]
+   + [[https://docs.sailfishos.org/Develop/HW_Adaptation/Sailfish_X_Xperia_Android_11_Build_and_Flash/][Android 11]]
+
+** HADK tools build
+
+   HADK-tools based builds are build split into different units per section that is build.
+
+   Each section depends on the section before being build before.
+
+   The sections are in that order:
+   + sfos.hybris.hal.sony.kernel.hadk :: Kernel for Sony based Sailfish OS ports
+   + mer.hybris.hal.pie.hadk  :: hybris-hal
+   + sfos.hybris.hal.img.boot.hadk :: droid-hal-img-boot
+   + sfos.mw.hadk :: Packages that use device specific sources or are just device specific middleware
+   + sfos.mw.pulseaudio.hadk or sfos.mw.pulseaudio.jb2q.hadk :: Pulseaudio modules needed for Hybris based ports
+   + sfos.droidmedia.audiopolicy.hadk :: Droidmedia
+   + sfos.droid.syspart.hadk :: Droid-system
+   + mer.droid.configs.hadk :: Droid-configs
+   + sfos.droid.version.hadk :: Droid-Version
+   + mk.image.hadk :: Building the final image for the device
+
+   When doing full builds these are ran through in that order.
+
+   Setup /hadk-tools/ and pass the device for file your device variant to hadk.tools:
+
+   #+begin_src sh
+   hadk.source -f sony.$variant.hadk
+   hadk.source -f sony.$build.hadk
+   #+end_src
+
+   Depending on your machine this can take some time!
+
+   After this you can your device using the /./flash.sh/ included the zip file.

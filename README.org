@@ -1,5 +1,5 @@
 #+TITLE: Sailfish OS Sony Xperia community ports - Bug Tracker
-* Build Instructions
+* Build and install Instructions
   Follow [[./INSTALL.org]].
 * Supported devices
 
