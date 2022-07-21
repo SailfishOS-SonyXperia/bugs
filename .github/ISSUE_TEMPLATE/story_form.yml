@@ -1,0 +1,9 @@
+name: Story
+description: Create a story to work on an issue, use bug or feature template to report an issue
+title: "[STORY] "
+labels: ["STORY"]
+body:
+- type: textarea
+  attributes:
+    label: "Enter text"
+    value: "Bugs are the worst!"

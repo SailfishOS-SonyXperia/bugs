@@ -1,0 +1,9 @@
+name: Task
+description: Create a task to work on an issue, use bug or feature template to report an issue
+title: "[TASK] "
+labels: ["TASK"]
+body:
+- type: textarea
+  attributes:
+    label: "Enter text"
+    value: "Bugs are the worst!"
