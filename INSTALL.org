@@ -6,6 +6,8 @@
 
 * Prebuilds
 
+  Releases are saved in the droid-hal-version-repository of each port, a link to each can
+  be found in the [[./README.org][readme]] file of this repository.
   Download the zip file attached to the latest release and follow the /flashing-readme.txt/
   included in the archive.
 
