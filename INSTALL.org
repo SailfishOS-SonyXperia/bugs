@@ -6,15 +6,35 @@
 
 * Prebuilds
 
-  Releases are saved in the droid-hal-version-repository of each port, a link to each can
-  be found in the [[./README.org][readme]] file of this repository.
-  Download the zip file attached to the latest release and follow the /flashing-readme.txt/
-  included in the archive.
+** Installation
+   :PROPERTIES:
+   :CREATED:  [2024-04-21 Sun 03:27]
+   :END:
+   Releases are saved in the droid-hal-version-repository of each port, a link to each can
+   be found in the [[./README.org][readme]] file of this repository.
+   Download the zip file attached to the latest release and follow the /flashing-readme.txt/
+   included in the archive.
 
-  If you need additional help please read the offical flashing instructions:
-  https://jolla.com/sailfishxinstall/
+   If you need additional help please read the official flashing instructions:
+   https://jolla.com/sailfishxinstall/
 
-  In case any problems arise please [[https://github.com/SailfishOS-SonyXperia/bug_tracker/issues/new/choose][open an issue]] in the repository.
+   In case any problems arise please [[https://github.com/SailfishOS-SonyXperia/bug_tracker/issues/new/choose][open an issue]] in the repository.
+
+** Upgrades to existing installations before 4.5.x
+   :PROPERTIES:
+   :CREATED:  [2024-04-21 Sun 03:27]
+   :END:
+
+   1. Visit the url below on your device:
+      #+begin_src sh
+      https://repo.sailfishos.org/obs/nemo:/testing:/hw:/sony:/kumano:/features:/cosupdater:/4.4.x/latest_aarch64
+      #+end_src
+   2. Tap on the link for the package "feature-cosupdateservice" to download it.
+   3. Open the settings app, got to "System->Untrusted Software", tap checkbox the "Allow unstrusted software" if did not do so
+      before
+   4. Go back to the setttings app, tap Checkbox the "Allow unstrusted software" again to disable it if you did not do so following these step.
+   5. Reboot the device.
+   6. Wait for the device to look for updates on it's own or visit the settings app to find updates.
 
 * Built it your self
 
