@@ -1,5 +1,5 @@
 #+TITLE: Sailfish OS Sony Xperia Build and install instructions
-#+LANGUAGE: english
+#+LANGUAGE: en_US
 * Intro
 
   This file tracks the install instructions for our ports
@@ -20,21 +20,56 @@
 
    In case any problems arise please [[https://github.com/SailfishOS-SonyXperia/bug_tracker/issues/new/choose][open an issue]] in the repository.
 
-** Upgrades to existing installations before 4.5.x
+** Updating your device
    :PROPERTIES:
-   :CREATED:  [2024-04-21 Sun 03:27]
+   :CREATED:  [2024-04-21 Sun 22:05]
    :END:
 
-   1. Visit the url below on your device:
-      #+begin_src sh
-      https://repo.sailfishos.org/obs/nemo:/testing:/hw:/sony:/kumano:/features:/cosupdater:/4.4.x/latest_aarch64
-      #+end_src
-   2. Tap on the link for the package "feature-cosupdateservice" to download it.
-   3. Open the settings app, got to "System->Untrusted Software", tap checkbox the "Allow unstrusted software" if did not do so
-      before
-   4. Go back to the setttings app, tap Checkbox the "Allow unstrusted software" again to disable it if you did not do so following these step.
-   5. Reboot the device.
-   6. Wait for the device to look for updates on it's own or visit the settings app to find updates.
+   If you update from 4.4.x please follow /Updates to existing installations before 4.5.x/ below first.
+
+   We warmly recommend making some 3-4 GB of free space for the internal storage of your device ( /home ) before starting the update.
+   Processing an OS update of almost 1 GB requires a good amount of work area.
+
+   To start updating your device  open “Settings > Sailfish OS updates”. Avoid running updates on the command line, please.
+   Move your pictures and videos to the SD card (or to your PC or cloud service).
+
+   This is the usual drill before attempting to update your devices:
+
+   Take a backup of your data before attempting to update your device and save the backup to an SD card
+   or to some other off-device location (PC, your cloud service).
+   Note that videos and images are not included in cloud-based backups.
+   Do not reboot the device while the update is in progress. Do keep the phone connected to a battery charger during the whole process.
+   The device screen may blank out during the update process; you may wake the display with a short press of the power key to monitor the progress.
+
+   For detailed instructions on updating software, read the help article [[https://docs.sailfishos.org/Support/Help_Articles/Managing_Sailfish_OS/Updating_Sailfish_OS/][Updating Sailfish OS in Sailfish OS Documentation]].
+
+   *NOTE 1: Even thou we use the instructions used by the official Jolla ports these ports are not supported by Jolla*
+   *Please don't report report device specific issues to Jolla, if in doubt report the bug here first*
+
+   *NOTE 2: Sailfish OS does not support downgrading. Never try to downgrade the OS as this would break your device.*
+
+   *NOTE 3: After downloading an update and selecting “Install” in the pulley menu, the device runs a restart first.*
+   *You will need to type the security code before the actual installation can start.*
+   *A horizontal progress bar appears on a black background, under the Sailfish OS logo.*
+   *As soon as the other end of the bar has been reached the phone will restart automatically.*
+   *If it doesn’t, please wait for 15 minutes. If it is still stuck at the 100% point of the progress bar it is time to perform [[https://docs.sailfishos.org/Support/Help_Articles/Tips_and_Tricks/#forced-power-off][forced power off]].*
+   *Next, turn the phone on with the power key and check the OS version at “Settings > About product”.*
+
+*** Updates to existing installations before 4.5.x
+    :PROPERTIES:
+    :CREATED:  [2024-04-21 Sun 03:27]
+    :END:
+
+    1. Visit the url below on your device:
+       #+begin_src sh
+       https://repo.sailfishos.org/obs/nemo:/testing:/hw:/sony:/kumano:/features:/cosupdater:/4.4.x/latest_aarch64
+       #+end_src
+    2. Tap on the link for the package "feature-cosupdateservice" to download it.
+    3. Open the settings app, got to "System->Untrusted Software", tap checkbox the "Allow unstrusted software" if did not do so
+       before
+    4. Go back to the setttings app, tap Checkbox the "Allow unstrusted software" again to disable it if you did not do so following these step.
+    5. Reboot the device.
+    6. Wait for the device to look for updates on it's own or visit the settings app to find updates.
 
 * Built it your self
 
