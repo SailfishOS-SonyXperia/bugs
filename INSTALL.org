@@ -62,14 +62,17 @@
 
     1. Visit the url below on your device:
        #+begin_src sh
-       https://repo.sailfishos.org/obs/nemo:/testing:/hw:/sony:/kumano:/features:/cosupdater:/4.4.x/latest_aarch64
+       https://repo.sailfishos.org/obs/nemo:/testing:/hw:/sony:/kumano:/features:/cosupdateservice:/4.4.x/latest_aarch64
        #+end_src
-    2. Tap on the link for the package "feature-cosupdateservice" to download it.
+    2. Click on the folder /norach/ Tap on the link for the package /feature-cosupdateservice/ to download it, do the same
+       for folder /aarch64/ and download  /cosupdateservice/.
     3. Open the settings app, got to "System->Untrusted Software", tap checkbox the "Allow unstrusted software" if did not do so
        before
-    4. Go back to the setttings app, tap Checkbox the "Allow unstrusted software" again to disable it if you did not do so following these step.
-    5. Reboot the device.
-    6. Wait for the device to look for updates on it's own or visit the settings app to find updates.
+    4. Select the packages you just downloaded by tapping the notifications from the download. First install /cosupdateservice/ and
+       then /feature-cosupdateservice/.
+    5. Go back to the setttings app, tap Checkbox the "Allow unstrusted software" again to disable it if you did not do so following these step.
+    6. Reboot the device.
+    7. Wait for the device to look for updates on it's own or visit the settings app to find updates.
 
 * Built it your self
 
