@@ -13,7 +13,7 @@ Also several documentation updates or buildinfrastructure changes have been made
 new scripts for release aggregation for update discovery.
 
 The delay between the last release was mostly caused by the development for the update discovery service Cosu and
-my personal situation in my private live which had a turn for the worst last year. The Xperia 1/5 II port also took some time of course.
+my personal situation in my private live which had a turn for the worse last year. The Xperia 1/5 II port also took some time of course.
 
 Updates to these project components are now tracking in the main bug tracking repository [SailfishOS-SonyXperia/bugs/releases](https://github.com/SailfishOS-SonyXperia/bugs/releases).
 
@@ -21,13 +21,20 @@ The highlights in this release are:
 - [ui] Update submodule to pull in the right icon package for Xperia 1. [SailfishOS-SonyXperia/bugs#37](https://github.com/SailfishOS-SonyXperia/bugs/issues/37)
   The launcher and other icons now should have the right solution
 appropriate to the resolution of the device.
+- [Cosu] Implement service to search for device updates. [SailfishOS-SonyXperia/bugs#89](https://github.com/SailfishOS-SonyXperia/bugs/issues/89)
+  The port now includes working update discovery, updates can be found, downloaded
+and installed through the update ui.
+- [doc] Document device upgrades before cosupdateservice [#71](https://github.com/SailfishOS-SonyXperia/bugs/issues/71)
+  Document the process of installing the update discovery service for existing installation
+of ports before updating through the normal process
 - [kernel] Enable CONFIG_EXT4_FS_POSIX_ACL in config. Contributes to JB#59542
 - [kernel] free task immediately to prevent slab task_struct memory leak. JB#60580
 - [kernel] input: sec_ts: Remove spam from event buffer is empty. Fixes JB#58343
 - [kernel] Update to Linux 4.14.264. Fixes JB#59877
 
 
-*Note the bug numbers have nothing to do with the port directly and are only here for reference*
+
+*Note the (Jolla) bug numbers have nothing to do with the port directly and are only here for reference*
 
 Thanks to all who have provided testing, reported bugs or have contributed otherwise.
 
@@ -93,3 +100,7 @@ Just make sure to download the software binaries for your device instead of the 
 # Changelog
 
 + [Changelog.md](https://github.com/SailfishOS-SonyXperia/droid-hal-version-sony-kumano/releases/download/4.5.0.28+git1/Changelog.md)
+
+# Release notes of previous releases:
+The release notes of previous releases can be found in this folder:
+https://github.com/SailfishOS-SonyXperia/bugs/tree/master/doc/release_notes
