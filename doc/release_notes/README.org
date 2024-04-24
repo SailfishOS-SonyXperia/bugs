@@ -1,0 +1,3 @@
+#+TITLE: Release notes archive
+This directory contains the release notes posted to the Sailfish OS forum as reference
+to link or to read the notes of older releases.
