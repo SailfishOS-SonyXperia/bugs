@@ -3,14 +3,19 @@
   Follow [[./INSTALL.org]].
 * Supported devices
 
-| Device      | Codename, Variants                         | Android base |
-|-------------+--------------------------------------------+--------------|
-| [[https://github.com/SailfishOS-SonyXperia/droid-hal-version-sony-kumano/releases][Releases]]    | kumano board (SM8150, Snapdragon 855+/860) |           10 |
-|-------------+--------------------------------------------+--------------|
-| Xperia 1    | griffin, J8110, J9110                      |              |
-| Xperia 5    | bahamut, J8210, J9210                      |              |
-|-------------+--------------------------------------------+--------------|
-| [[https://github.com/SailfishOS-SonyXperia/droid-hal-version-sony-kumano/releases][Releases]]    | edo board (SM8250, Snapdragon 865 5G)      |           11 |
-|-------------+--------------------------------------------+--------------|
-| Xperia 1 II | pdx203, XQ-AT51, XQ-AT52                   |              |
-| Xperia 5 II | pdx206,          XQ-AS52                   |              |
+| Device            | Codename, Variants                         | Android base |
+|-------------------+--------------------------------------------+--------------|
+| [[https://github.com/SailfishOS-SonyXperia/droid-hal-version-sony-kumano/releases][Releases]]          | kumano board (SM8150, Snapdragon 855+/860) |           10 |
+|-------------------+--------------------------------------------+--------------|
+| Xperia 1          | griffin, J8110, J9110                      |              |
+| Xperia 5          | bahamut, J8210, J9210                      |              |
+|-------------------+--------------------------------------------+--------------|
+| [[https://github.com/SailfishOS-SonyXperia/droid-hal-version-sony-kumano/releases][Releases]]          | edo board (SM8250, Snapdragon 865 5G)      |           11 |
+|-------------------+--------------------------------------------+--------------|
+| Xperia 1 II       | pdx203, XQ-AT51, XQ-AT52                   |              |
+| Xperia 5 II       | pdx206,          XQ-AS52                   |              |
+|-------------------+--------------------------------------------+--------------|
+| Releases          | nagara board (SM8450 Snapdragon 8 Gen 1)   |           13 |
+|-------------------+--------------------------------------------+--------------|
+| Xperia 1 IV^{WIP} | pdx223, XQ-CT54                            |           13 |
+| Xperia 5 IV^{WIP} | pdx224, XQ-CQ54                            |              |
